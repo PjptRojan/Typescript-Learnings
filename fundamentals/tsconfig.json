@@ -1,0 +1,11 @@
+// ts compiler takes input typescript and outputs javascript. But javascript has multiple versions of it depending on runtime.
+// so if you want a js version that is sure to run on everywhere (node and all browsers), then we should use ES5 on the target property.
+// but if you want to target specific node runtime that contains alot of modern features of js then we can use modern versions of js.
+
+{
+    "compilerOptions" : {
+        "target": "ESNext"
+    }
+}
+
+// how does the config file works: tsc (running only tsc command will look for a default config file)
